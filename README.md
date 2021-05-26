@@ -9,3 +9,5 @@
 **Date** : 26/27 mai 2021
 
 **Durée** : 2 x 1h30
+
+**Site web** : https://ifb-elixirfr.github.io/FAIR_EBAII_n2/
