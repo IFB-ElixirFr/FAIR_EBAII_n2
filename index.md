@@ -25,10 +25,12 @@ Pour aller plus loin : https://ifb-elixirfr.github.io/IFB-FAIR-bioinfo-training/
 
 **Thème** : outils et environnements FAIR pour la bioanalyse
 
-**Date** : 26 et 27 mai 2021
+**Éditions** : 
+
+- Édition 1 : 26 et 27 mai 2021
+- Édition 2 : 6 et 7 juin 2023
 
 **Durée** : 2 x 1h30
-
 
 ### Le support de cours
 
