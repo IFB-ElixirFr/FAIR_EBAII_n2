@@ -34,4 +34,4 @@ Pour aller plus loin : https://ifb-elixirfr.github.io/IFB-FAIR-bioinfo-training/
 
 ### Le support de cours
 
-<iframe src="https://widgets.figshare.com/articles/14677941/embed?show_title=1" width="100%" height="351" allowfullscreen frameborder="0"></iframe>
+<iframe src="https://widgets.figshare.com/articles/23275349/embed?show_title=1" width="100%" height="351" allowfullscreen frameborder="0"></iframe>
