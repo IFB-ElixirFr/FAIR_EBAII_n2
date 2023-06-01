@@ -1,5 +1,3 @@
-# add conda: "xx.yml"
-
 SAMPLES, = glob_wildcards(config["dataDir"]+"{sample}.fastq.gz")
 BIDX = ["1","2","3","4","rev.1","rev.2"]
 
@@ -40,7 +38,6 @@ rule counting:
   params: t="gene", g="ID", s="2"
   log:
     "Logs/{sample}_counts.log"
-  conda: "condaEnv4SmkRules/counting.yml"
   shell:
     "featureCounts -t {params.t} -g {params.g} -a {input.annot} -s {params.s} -o {output} {input.bam} &> {log}"
 
@@ -53,7 +50,6 @@ rule sam2bam_sort:
   log:
     sort="Logs/{sample}_sam2bam_sort.log",
     index="Logs/{sample}_bam2bai.log"
-  conda: "condaEnv4SmkRules/sam2bam_sort.yml"
   shell: 
     "samtools sort -O bam -o {output.bam} {input} 2> {log.sort} ;"
     "samtools index {output.bam} 2> {log.index}"
@@ -67,7 +63,6 @@ rule bwt2_mapping:
     expand("Tmp/Otauri.{ext}.bt2", ext=BIDX)
   log:
     "Logs/{sample}_bwt2_mapping.log"
-  conda: "condaEnv4SmkRules/bwt2_mapping.yml"
   shell: "bowtie2 -x Tmp/Otauri -U {input[0]} -S {output} 2> {log} "
 
 rule genome_bwt2_index:
@@ -78,7 +73,6 @@ rule genome_bwt2_index:
   log:
     log1="Logs/genome_bwt2_index.log1",
     log2="Logs/genome_bwt2_index.log2"
-  conda: "condaEnv4SmkRules/bwt2_mapping.yml"
   shell: "bowtie2-build {input} Tmp/Otauri 1>{log.log1} 2>{log.log2}"
 
 rule fastqc:
@@ -90,7 +84,6 @@ rule fastqc:
   log:
     log1="Logs/{sample}_fastqc.log1",
     log2="Logs/{sample}_fastqc.log2"
-  conda: "condaEnv4SmkRules/fastqc.yml"
   shell: "fastqc --outdir FastQC/ {input} 1>{log.log1} 2>{log.log2}"
 
 
