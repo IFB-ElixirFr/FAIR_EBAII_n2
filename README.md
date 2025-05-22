@@ -16,6 +16,7 @@ Roscoff
 
 - Edition 1 : 26/27 mai 2021
 - Edition 2 : 6/7 juin 2023
+- Edition 3 : 3/4 juin 2025
 
 ## Durée
 
