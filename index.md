@@ -29,9 +29,10 @@ Pour aller plus loin : https://ifb-elixirfr.github.io/IFB-FAIR-bioinfo-training/
 
 - Édition 1 : 26 et 27 mai 2021
 - Édition 2 : 6 et 7 juin 2023
+- Édition 3 : 3 et 4 juin 2025
 
 **Durée** : 2 x 1h30
 
 ### Le support de cours
 
-<iframe src="https://widgets.figshare.com/articles/23275349/embed?show_title=1" width="100%" height="351" allowfullscreen frameborder="0"></iframe>
+<iframe src="https://widgets.figshare.com/articles/29125982/embed?show_title=1" width="100%" height="351" allowfullscreen frameborder="0"></iframe>
